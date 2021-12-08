@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A964F78275F38F9009C28AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A964F77275F38F9009C28AB /* AppDelegate.m */; };
+		0A964F7B275F38F9009C28AB /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A964F7A275F38F9009C28AB /* SceneDelegate.m */; };
+		0A964F7E275F38F9009C28AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A964F7D275F38F9009C28AB /* ViewController.m */; };
+		0A964F81275F38F9009C28AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A964F7F275F38F9009C28AB /* Main.storyboard */; };
+		0A964F83275F38FC009C28AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A964F82275F38FC009C28AB /* Assets.xcassets */; };
+		0A964F86275F38FC009C28AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A964F84275F38FC009C28AB /* LaunchScreen.storyboard */; };
+		0A964F89275F38FC009C28AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A964F88275F38FC009C28AB /* main.m */; };
+		0A964F93275F38FC009C28AB /* TradingTableDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A964F92275F38FC009C28AB /* TradingTableDemoTests.m */; };
+		0A964F9D275F38FC009C28AB /* TradingTableDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A964F9C275F38FC009C28AB /* TradingTableDemoUITests.m */; };
+		0A964F9F275F38FC009C28AB /* TradingTableDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A964F9E275F38FC009C28AB /* TradingTableDemoUITestsLaunchTests.m */; };
+		0A964FAE275F398F009C28AB /* TradingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A964FAD275F398F009C28AB /* TradingTableViewCell.m */; };
+		0A964FB1275F39BC009C28AB /* TradingCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A964FB0275F39BC009C28AB /* TradingCollectionViewCell.m */; };
+		0A964FB8275F3E1E009C28AB /* TradingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A964FB7275F3E1E009C28AB /* TradingTableView.m */; };
+		0A964FBD275F3F0E009C28AB /* TradingTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A964FBC275F3F0E009C28AB /* TradingTableHeaderView.m */; };
+		0A964FC1275F536D009C28AB /* TradingTitleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A964FC0275F536D009C28AB /* TradingTitleCollectionViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A964F8F275F38FC009C28AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A964F6B275F38F9009C28AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A964F72275F38F9009C28AB;
+			remoteInfo = TradingTableDemo;
+		};
+		0A964F99275F38FC009C28AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A964F6B275F38F9009C28AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A964F72275F38F9009C28AB;
+			remoteInfo = TradingTableDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A964F73275F38F9009C28AB /* TradingTableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradingTableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A964F76275F38F9009C28AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0A964F77275F38F9009C28AB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0A964F79275F38F9009C28AB /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		0A964F7A275F38F9009C28AB /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		0A964F7C275F38F9009C28AB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0A964F7D275F38F9009C28AB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0A964F80275F38F9009C28AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A964F82275F38FC009C28AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A964F85275F38FC009C28AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A964F87275F38FC009C28AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A964F88275F38FC009C28AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A964F8E275F38FC009C28AB /* TradingTableDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradingTableDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A964F92275F38FC009C28AB /* TradingTableDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradingTableDemoTests.m; sourceTree = "<group>"; };
+		0A964F98275F38FC009C28AB /* TradingTableDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradingTableDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A964F9C275F38FC009C28AB /* TradingTableDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradingTableDemoUITests.m; sourceTree = "<group>"; };
+		0A964F9E275F38FC009C28AB /* TradingTableDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradingTableDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
+		0A964FAC275F398F009C28AB /* TradingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradingTableViewCell.h; sourceTree = "<group>"; };
+		0A964FAD275F398F009C28AB /* TradingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradingTableViewCell.m; sourceTree = "<group>"; };
+		0A964FAF275F39BC009C28AB /* TradingCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradingCollectionViewCell.h; sourceTree = "<group>"; };
+		0A964FB0275F39BC009C28AB /* TradingCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradingCollectionViewCell.m; sourceTree = "<group>"; };
+		0A964FB6275F3E1E009C28AB /* TradingTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradingTableView.h; sourceTree = "<group>"; };
+		0A964FB7275F3E1E009C28AB /* TradingTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradingTableView.m; sourceTree = "<group>"; };
+		0A964FBA275F3EB2009C28AB /* Trading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Trading.h; sourceTree = "<group>"; };
+		0A964FBB275F3F0E009C28AB /* TradingTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradingTableHeaderView.h; sourceTree = "<group>"; };
+		0A964FBC275F3F0E009C28AB /* TradingTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradingTableHeaderView.m; sourceTree = "<group>"; };
+		0A964FBF275F536D009C28AB /* TradingTitleCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradingTitleCollectionViewCell.h; sourceTree = "<group>"; };
+		0A964FC0275F536D009C28AB /* TradingTitleCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradingTitleCollectionViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A964F70275F38F9009C28AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A964F8B275F38FC009C28AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A964F95275F38FC009C28AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A964F6A275F38F9009C28AB = {
+			isa = PBXGroup;
+			children = (
+				0A964F75275F38F9009C28AB /* TradingTableDemo */,
+				0A964F91275F38FC009C28AB /* TradingTableDemoTests */,
+				0A964F9B275F38FC009C28AB /* TradingTableDemoUITests */,
+				0A964F74275F38F9009C28AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A964F74275F38F9009C28AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A964F73275F38F9009C28AB /* TradingTableDemo.app */,
+				0A964F8E275F38FC009C28AB /* TradingTableDemoTests.xctest */,
+				0A964F98275F38FC009C28AB /* TradingTableDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A964F75275F38F9009C28AB /* TradingTableDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0A964FAB275F3919009C28AB /* TradingTable */,
+				0A964F76275F38F9009C28AB /* AppDelegate.h */,
+				0A964F77275F38F9009C28AB /* AppDelegate.m */,
+				0A964F79275F38F9009C28AB /* SceneDelegate.h */,
+				0A964F7A275F38F9009C28AB /* SceneDelegate.m */,
+				0A964F7C275F38F9009C28AB /* ViewController.h */,
+				0A964F7D275F38F9009C28AB /* ViewController.m */,
+				0A964F7F275F38F9009C28AB /* Main.storyboard */,
+				0A964F82275F38FC009C28AB /* Assets.xcassets */,
+				0A964F84275F38FC009C28AB /* LaunchScreen.storyboard */,
+				0A964F87275F38FC009C28AB /* Info.plist */,
+				0A964F88275F38FC009C28AB /* main.m */,
+			);
+			path = TradingTableDemo;
+			sourceTree = "<group>";
+		};
+		0A964F91275F38FC009C28AB /* TradingTableDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A964F92275F38FC009C28AB /* TradingTableDemoTests.m */,
+			);
+			path = TradingTableDemoTests;
+			sourceTree = "<group>";
+		};
+		0A964F9B275F38FC009C28AB /* TradingTableDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0A964F9C275F38FC009C28AB /* TradingTableDemoUITests.m */,
+				0A964F9E275F38FC009C28AB /* TradingTableDemoUITestsLaunchTests.m */,
+			);
+			path = TradingTableDemoUITests;
+			sourceTree = "<group>";
+		};
+		0A964FAB275F3919009C28AB /* TradingTable */ = {
+			isa = PBXGroup;
+			children = (
+				0A964FB9275F3E6E009C28AB /* Utils */,
+				0A964FB6275F3E1E009C28AB /* TradingTableView.h */,
+				0A964FB7275F3E1E009C28AB /* TradingTableView.m */,
+				0A964FBB275F3F0E009C28AB /* TradingTableHeaderView.h */,
+				0A964FBC275F3F0E009C28AB /* TradingTableHeaderView.m */,
+				0A964FAC275F398F009C28AB /* TradingTableViewCell.h */,
+				0A964FAD275F398F009C28AB /* TradingTableViewCell.m */,
+				0A964FAF275F39BC009C28AB /* TradingCollectionViewCell.h */,
+				0A964FB0275F39BC009C28AB /* TradingCollectionViewCell.m */,
+				0A964FBF275F536D009C28AB /* TradingTitleCollectionViewCell.h */,
+				0A964FC0275F536D009C28AB /* TradingTitleCollectionViewCell.m */,
+			);
+			path = TradingTable;
+			sourceTree = "<group>";
+		};
+		0A964FB9275F3E6E009C28AB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0A964FBA275F3EB2009C28AB /* Trading.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A964F72275F38F9009C28AB /* TradingTableDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A964FA2275F38FC009C28AB /* Build configuration list for PBXNativeTarget "TradingTableDemo" */;
+			buildPhases = (
+				0A964F6F275F38F9009C28AB /* Sources */,
+				0A964F70275F38F9009C28AB /* Frameworks */,
+				0A964F71275F38F9009C28AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TradingTableDemo;
+			productName = TradingTableDemo;
+			productReference = 0A964F73275F38F9009C28AB /* TradingTableDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A964F8D275F38FC009C28AB /* TradingTableDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A964FA5275F38FC009C28AB /* Build configuration list for PBXNativeTarget "TradingTableDemoTests" */;
+			buildPhases = (
+				0A964F8A275F38FC009C28AB /* Sources */,
+				0A964F8B275F38FC009C28AB /* Frameworks */,
+				0A964F8C275F38FC009C28AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A964F90275F38FC009C28AB /* PBXTargetDependency */,
+			);
+			name = TradingTableDemoTests;
+			productName = TradingTableDemoTests;
+			productReference = 0A964F8E275F38FC009C28AB /* TradingTableDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0A964F97275F38FC009C28AB /* TradingTableDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A964FA8275F38FC009C28AB /* Build configuration list for PBXNativeTarget "TradingTableDemoUITests" */;
+			buildPhases = (
+				0A964F94275F38FC009C28AB /* Sources */,
+				0A964F95275F38FC009C28AB /* Frameworks */,
+				0A964F96275F38FC009C28AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A964F9A275F38FC009C28AB /* PBXTargetDependency */,
+			);
+			name = TradingTableDemoUITests;
+			productName = TradingTableDemoUITests;
+			productReference = 0A964F98275F38FC009C28AB /* TradingTableDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A964F6B275F38F9009C28AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					0A964F72275F38F9009C28AB = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					0A964F8D275F38FC009C28AB = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 0A964F72275F38F9009C28AB;
+					};
+					0A964F97275F38FC009C28AB = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 0A964F72275F38F9009C28AB;
+					};
+				};
+			};
+			buildConfigurationList = 0A964F6E275F38F9009C28AB /* Build configuration list for PBXProject "TradingTableDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A964F6A275F38F9009C28AB;
+			productRefGroup = 0A964F74275F38F9009C28AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A964F72275F38F9009C28AB /* TradingTableDemo */,
+				0A964F8D275F38FC009C28AB /* TradingTableDemoTests */,
+				0A964F97275F38FC009C28AB /* TradingTableDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A964F71275F38F9009C28AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A964F86275F38FC009C28AB /* LaunchScreen.storyboard in Resources */,
+				0A964F83275F38FC009C28AB /* Assets.xcassets in Resources */,
+				0A964F81275F38F9009C28AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A964F8C275F38FC009C28AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A964F96275F38FC009C28AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A964F6F275F38F9009C28AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A964FBD275F3F0E009C28AB /* TradingTableHeaderView.m in Sources */,
+				0A964FAE275F398F009C28AB /* TradingTableViewCell.m in Sources */,
+				0A964F7E275F38F9009C28AB /* ViewController.m in Sources */,
+				0A964F78275F38F9009C28AB /* AppDelegate.m in Sources */,
+				0A964F89275F38FC009C28AB /* main.m in Sources */,
+				0A964FB1275F39BC009C28AB /* TradingCollectionViewCell.m in Sources */,
+				0A964F7B275F38F9009C28AB /* SceneDelegate.m in Sources */,
+				0A964FC1275F536D009C28AB /* TradingTitleCollectionViewCell.m in Sources */,
+				0A964FB8275F3E1E009C28AB /* TradingTableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A964F8A275F38FC009C28AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A964F93275F38FC009C28AB /* TradingTableDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A964F94275F38FC009C28AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A964F9F275F38FC009C28AB /* TradingTableDemoUITestsLaunchTests.m in Sources */,
+				0A964F9D275F38FC009C28AB /* TradingTableDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A964F90275F38FC009C28AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A964F72275F38F9009C28AB /* TradingTableDemo */;
+			targetProxy = 0A964F8F275F38FC009C28AB /* PBXContainerItemProxy */;
+		};
+		0A964F9A275F38FC009C28AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A964F72275F38F9009C28AB /* TradingTableDemo */;
+			targetProxy = 0A964F99275F38FC009C28AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A964F7F275F38F9009C28AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A964F80275F38F9009C28AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0A964F84275F38FC009C28AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A964F85275F38FC009C28AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A964FA0275F38FC009C28AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0A964FA1275F38FC009C28AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A964FA3275F38FC009C28AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TradingTableDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chard.TradingTableDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A964FA4275F38FC009C28AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TradingTableDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chard.TradingTableDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0A964FA6275F38FC009C28AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chard.TradingTableDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TradingTableDemo.app/TradingTableDemo";
+			};
+			name = Debug;
+		};
+		0A964FA7275F38FC009C28AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chard.TradingTableDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TradingTableDemo.app/TradingTableDemo";
+			};
+			name = Release;
+		};
+		0A964FA9275F38FC009C28AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chard.TradingTableDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TradingTableDemo;
+			};
+			name = Debug;
+		};
+		0A964FAA275F38FC009C28AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chard.TradingTableDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TradingTableDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A964F6E275F38F9009C28AB /* Build configuration list for PBXProject "TradingTableDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A964FA0275F38FC009C28AB /* Debug */,
+				0A964FA1275F38FC009C28AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A964FA2275F38FC009C28AB /* Build configuration list for PBXNativeTarget "TradingTableDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A964FA3275F38FC009C28AB /* Debug */,
+				0A964FA4275F38FC009C28AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A964FA5275F38FC009C28AB /* Build configuration list for PBXNativeTarget "TradingTableDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A964FA6275F38FC009C28AB /* Debug */,
+				0A964FA7275F38FC009C28AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A964FA8275F38FC009C28AB /* Build configuration list for PBXNativeTarget "TradingTableDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A964FA9275F38FC009C28AB /* Debug */,
+				0A964FAA275F38FC009C28AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A964F6B275F38F9009C28AB /* Project object */;
+}
