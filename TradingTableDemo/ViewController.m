@@ -23,7 +23,6 @@
     
     [self loadData];
     [self setupTableView];
-    
 }
 
 #pragma mark - private

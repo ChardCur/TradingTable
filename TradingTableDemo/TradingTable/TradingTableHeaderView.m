@@ -39,7 +39,7 @@ static CGFloat const itemEdge = 0.0f;
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    self.accessoryView.frame = CGRectMake(0, 0, self.itemSize.width, self.itemSize.height);
+    self.accessoryView.frame = CGRectMake(0, 0, self.itemSize.width, self.frame.size.height);
     self.collectionView.frame = CGRectMake(self.itemSize.width, 0, self.frame.size.width - self.itemSize.width, self.itemSize.height);
     self.lineView.frame = CGRectMake(0, self.frame.size.height - 0.5, self.frame.size.width, 0.5);
 }

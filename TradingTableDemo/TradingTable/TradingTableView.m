@@ -25,8 +25,12 @@ static NSString *const cellIdentifier = @"ExcelTableViewCell";
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self addSubview:self.headerView];
+//        [self addSubview:self.headerView];
         [self addSubview:self.tableView];
+        
+        if (@available(iOS 15.0, *)) {
+            self.tableView.sectionHeaderTopPadding = 0;
+        }
     }
     return self;
 }
@@ -35,7 +39,7 @@ static NSString *const cellIdentifier = @"ExcelTableViewCell";
     [super layoutSubviews];
     CGFloat headerHeight = [self.delegate tradingTableViewHeightForHeader];
     self.headerView.frame = CGRectMake(0, 0, self.frame.size.width, headerHeight);
-    self.tableView.frame = CGRectMake(0, headerHeight, self.frame.size.width, self.frame.size.height - headerHeight);
+    self.tableView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
 }
 
 - (void)reloadData {
@@ -58,7 +62,6 @@ static NSString *const cellIdentifier = @"ExcelTableViewCell";
         _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         _tableView.dataSource = self;
         _tableView.delegate = self;
-        _tableView.backgroundColor = [UIColor yellowColor];
     }
     return _tableView;
 }
@@ -77,14 +80,22 @@ static NSString *const cellIdentifier = @"ExcelTableViewCell";
     if (!cell) {
         cell = [[TradingTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
         cell.itemSize = [self.delegate tradingTableViewSizeForItem];
+        cell.collectionView.delegate = self;
     }
     cell.dataArray = [self.delegate tradingTableViewDataSource];
-    cell.collectionView.delegate = self;
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return [self.delegate tradingTableViewSizeForItem].height;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    return self.headerView;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return [self.delegate tradingTableViewHeightForHeader];
 }
 
 #pragma mark - UICollectionViewDelegate
