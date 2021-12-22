@@ -29,14 +29,21 @@
 - (void)setUIWithUnitCount:(NSInteger)count {
     _labelCount = count;
     for (int i = 0; i < count; i++) {
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(unitViewWidth * i, 0, unitViewWidth, self.contentView.frame.size.height)];
+        UILabel *label = [[UILabel alloc] init];
         label.textColor = [UIColor blackColor];
-        label.backgroundColor = [UIColor whiteColor];
         label.font = [UIFont systemFontOfSize:16];
         label.textAlignment = NSTextAlignmentCenter;
         label.text = @"--";
         label.tag = 100 + i;
         [self.contentView addSubview:label];
+    }
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    for (int i = 0; i < self.contentView.subviews.count; i ++) {
+        UILabel *label = (UILabel *)[self.contentView.subviews objectAtIndex:i];
+        label.frame = CGRectMake(unitViewWidth * i, 0, unitViewWidth, self.contentView.frame.size.height);
     }
 }
 

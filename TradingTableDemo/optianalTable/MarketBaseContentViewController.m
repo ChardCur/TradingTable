@@ -7,7 +7,7 @@
 
 #import "MarketBaseContentViewController.h"
 
-static CGFloat const topTitleViewHeight = 50.0;
+static CGFloat const topTitleViewHeight = 45.0;
 static CGFloat const nameTableViewWidth = 100.0;
 static CGFloat const attributeUnitWidth = 100.0;
 
@@ -57,13 +57,12 @@ static CGFloat const attributeUnitWidth = 100.0;
 - (void)createViews {
     self.topTitleView = [[TopTitleView alloc] initWithFrame:CGRectMake(0, self.view.safeAreaInsets.top, self.view.frame.size.width, topTitleViewHeight) withTitles:self.titles];
     self.topTitleView.delegate = self;
-    self.topTitleView.backgroundColor = [UIColor redColor];
     [self.view addSubview:self.topTitleView];
     
     self.nameTableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     self.nameTableView.dataSource = self;
     self.nameTableView.delegate = self;
-    self.nameTableView.backgroundColor = [UIColor yellowColor];
+    self.nameTableView.estimatedRowHeight = 10;
     [self.view addSubview:self.nameTableView];
     
     self.attributesScrollView = [[UIScrollView alloc] init];
@@ -74,7 +73,7 @@ static CGFloat const attributeUnitWidth = 100.0;
     self.attributesTableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     self.attributesTableView.dataSource = self;
     self.attributesTableView.delegate = self;
-    self.attributesTableView.backgroundColor = [UIColor blueColor];
+    self.attributesTableView.estimatedRowHeight = 10;
     [self.attributesScrollView addSubview:self.attributesTableView];
 }
 
@@ -105,6 +104,14 @@ static CGFloat const attributeUnitWidth = 100.0;
 #pragma mark - TopTitleViewDelegate
 - (void)topTitleView:(TopTitleView *)topTitleView scrollViewDidScroll:(UIScrollView *)scrollView {
     self.attributesScrollView.contentOffset = scrollView.contentOffset;
+}
+
+- (void)topTitleView:(TopTitleView *)topTitleView clickedEditButton:(UIButton *)editButton {
+    
+}
+
+- (void)topTitleView:(TopTitleView *)topTitleView clickedButton:(UIButton *)button {
+    
 }
 
 @end

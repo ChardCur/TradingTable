@@ -15,6 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 - (void)topTitleView:(TopTitleView *)topTitleView scrollViewDidScroll:(UIScrollView *)scrollView;
+- (void)topTitleView:(TopTitleView *)topTitleView clickedEditButton:(UIButton *)editButton;
+- (void)topTitleView:(TopTitleView *)topTitleView clickedCancelButton:(UIButton *)cancelButton;
+- (void)topTitleView:(TopTitleView *)topTitleView clickedButton:(UIButton *)button;
 
 @end
 
