@@ -9,6 +9,9 @@
 #define MarketConst_h
 
 #import "AttributeHelper.h"
+#import "StockModel.h"
+#import "CDAttributeBaseHeaderView.h"
+#import "CDNameBaseHeaderView.h"
 
 //判断数组是否为空
 #define kArrayIsEmpty(array) (array == nil || [array isKindOfClass:[NSNull class]] || array.count == 0)

@@ -13,9 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface AttributeHelper : NSObject
 
 + (NSString *)floatStringWithNumber:(NSNumber *)num;
-
 + (UIColor *)colorWithFloatValue:(float)value;
-
++ (NSArray *)getProperties:(Class)cls;
 + (NSArray *)getHashAttributes;
 
 @end

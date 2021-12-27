@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A3F3DF12770678E005749CC /* MarketBaseContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F3DF02770678E005749CC /* MarketBaseContentViewController.m */; };
-		0A3F3DF4277067C2005749CC /* TopTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F3DF3277067C2005749CC /* TopTitleView.m */; };
 		0A3F3DF627706807005749CC /* tmpData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A3F3DF527706807005749CC /* tmpData.json */; };
-		0A3F3DFD27707B76005749CC /* TradeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F3DFC27707B76005749CC /* TradeTestViewController.m */; };
 		0A3F3E00277087FA005749CC /* StockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F3DFF277087FA005749CC /* StockModel.m */; };
 		0A3F3E0327715A5E005749CC /* AttributeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F3E0227715A5E005749CC /* AttributeCell.m */; };
 		0A3F3E0B27717EC4005749CC /* AttributeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F3E0A27717EC4005749CC /* AttributeHelper.m */; };
 		0A3F3E0E2771BBC8005749CC /* NameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F3E0D2771BBC8005749CC /* NameCell.m */; };
 		0A3F3E102772AE59005749CC /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3F3E0F2772AE59005749CC /* Media.xcassets */; };
+		0A3F3E13277962BC005749CC /* CDNameBaseHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F3E12277962BC005749CC /* CDNameBaseHeaderView.m */; };
+		0A3F3E16277962D9005749CC /* CDAttributeBaseHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F3E15277962D9005749CC /* CDAttributeBaseHeaderView.m */; };
+		0A3F3E192779A62C005749CC /* CDMarketBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F3E182779A62C005749CC /* CDMarketBaseView.m */; };
+		0A3F3E1C2779AF67005749CC /* MarketTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F3E1B2779AF67005749CC /* MarketTestViewController.m */; };
 		0A964F78275F38F9009C28AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A964F77275F38F9009C28AB /* AppDelegate.m */; };
 		0A964F7B275F38F9009C28AB /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A964F7A275F38F9009C28AB /* SceneDelegate.m */; };
 		0A964F7E275F38F9009C28AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A964F7D275F38F9009C28AB /* ViewController.m */; };
@@ -51,13 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A3F3DEF2770678E005749CC /* MarketBaseContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarketBaseContentViewController.h; sourceTree = "<group>"; };
-		0A3F3DF02770678E005749CC /* MarketBaseContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarketBaseContentViewController.m; sourceTree = "<group>"; };
-		0A3F3DF2277067C2005749CC /* TopTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopTitleView.h; sourceTree = "<group>"; };
-		0A3F3DF3277067C2005749CC /* TopTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopTitleView.m; sourceTree = "<group>"; };
 		0A3F3DF527706807005749CC /* tmpData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tmpData.json; sourceTree = "<group>"; };
-		0A3F3DFB27707B76005749CC /* TradeTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradeTestViewController.h; sourceTree = "<group>"; };
-		0A3F3DFC27707B76005749CC /* TradeTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradeTestViewController.m; sourceTree = "<group>"; };
 		0A3F3DFE277087FA005749CC /* StockModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockModel.h; sourceTree = "<group>"; };
 		0A3F3DFF277087FA005749CC /* StockModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockModel.m; sourceTree = "<group>"; };
 		0A3F3E0127715A5E005749CC /* AttributeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributeCell.h; sourceTree = "<group>"; };
@@ -68,6 +63,14 @@
 		0A3F3E0C2771BBC8005749CC /* NameCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NameCell.h; sourceTree = "<group>"; };
 		0A3F3E0D2771BBC8005749CC /* NameCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NameCell.m; sourceTree = "<group>"; };
 		0A3F3E0F2772AE59005749CC /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		0A3F3E11277962BC005749CC /* CDNameBaseHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDNameBaseHeaderView.h; sourceTree = "<group>"; };
+		0A3F3E12277962BC005749CC /* CDNameBaseHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDNameBaseHeaderView.m; sourceTree = "<group>"; };
+		0A3F3E14277962D9005749CC /* CDAttributeBaseHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDAttributeBaseHeaderView.h; sourceTree = "<group>"; };
+		0A3F3E15277962D9005749CC /* CDAttributeBaseHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDAttributeBaseHeaderView.m; sourceTree = "<group>"; };
+		0A3F3E172779A62C005749CC /* CDMarketBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDMarketBaseView.h; sourceTree = "<group>"; };
+		0A3F3E182779A62C005749CC /* CDMarketBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDMarketBaseView.m; sourceTree = "<group>"; };
+		0A3F3E1A2779AF67005749CC /* MarketTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarketTestViewController.h; sourceTree = "<group>"; };
+		0A3F3E1B2779AF67005749CC /* MarketTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarketTestViewController.m; sourceTree = "<group>"; };
 		0A964F73275F38F9009C28AB /* TradingTableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradingTableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A964F76275F38F9009C28AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0A964F77275F38F9009C28AB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -129,10 +132,8 @@
 				0A3F3E082771719F005749CC /* Tools */,
 				0A3F3DF7277068EA005749CC /* Models */,
 				0A3F3DEE27706767005749CC /* Views */,
-				0A3F3DEF2770678E005749CC /* MarketBaseContentViewController.h */,
-				0A3F3DF02770678E005749CC /* MarketBaseContentViewController.m */,
-				0A3F3DFB27707B76005749CC /* TradeTestViewController.h */,
-				0A3F3DFC27707B76005749CC /* TradeTestViewController.m */,
+				0A3F3E1A2779AF67005749CC /* MarketTestViewController.h */,
+				0A3F3E1B2779AF67005749CC /* MarketTestViewController.m */,
 				0A3F3DF527706807005749CC /* tmpData.json */,
 				0A3F3E0F2772AE59005749CC /* Media.xcassets */,
 			);
@@ -142,8 +143,12 @@
 		0A3F3DEE27706767005749CC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0A3F3DF2277067C2005749CC /* TopTitleView.h */,
-				0A3F3DF3277067C2005749CC /* TopTitleView.m */,
+				0A3F3E11277962BC005749CC /* CDNameBaseHeaderView.h */,
+				0A3F3E12277962BC005749CC /* CDNameBaseHeaderView.m */,
+				0A3F3E14277962D9005749CC /* CDAttributeBaseHeaderView.h */,
+				0A3F3E15277962D9005749CC /* CDAttributeBaseHeaderView.m */,
+				0A3F3E172779A62C005749CC /* CDMarketBaseView.h */,
+				0A3F3E182779A62C005749CC /* CDMarketBaseView.m */,
 				0A3F3E0127715A5E005749CC /* AttributeCell.h */,
 				0A3F3E0227715A5E005749CC /* AttributeCell.m */,
 				0A3F3E0C2771BBC8005749CC /* NameCell.h */,
@@ -394,9 +399,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A3F3DF12770678E005749CC /* MarketBaseContentViewController.m in Sources */,
-				0A3F3DF4277067C2005749CC /* TopTitleView.m in Sources */,
 				0A964FBD275F3F0E009C28AB /* TradingTableHeaderView.m in Sources */,
+				0A3F3E13277962BC005749CC /* CDNameBaseHeaderView.m in Sources */,
 				0A3F3E0B27717EC4005749CC /* AttributeHelper.m in Sources */,
 				0A964FAE275F398F009C28AB /* TradingTableViewCell.m in Sources */,
 				0A3F3E00277087FA005749CC /* StockModel.m in Sources */,
@@ -406,10 +410,12 @@
 				0A964F89275F38FC009C28AB /* main.m in Sources */,
 				0A3F3E0327715A5E005749CC /* AttributeCell.m in Sources */,
 				0A964FB1275F39BC009C28AB /* TradingCollectionViewCell.m in Sources */,
-				0A3F3DFD27707B76005749CC /* TradeTestViewController.m in Sources */,
 				0A964F7B275F38F9009C28AB /* SceneDelegate.m in Sources */,
 				0A964FC1275F536D009C28AB /* TradingTitleCollectionViewCell.m in Sources */,
 				0A964FB8275F3E1E009C28AB /* TradingTableView.m in Sources */,
+				0A3F3E16277962D9005749CC /* CDAttributeBaseHeaderView.m in Sources */,
+				0A3F3E1C2779AF67005749CC /* MarketTestViewController.m in Sources */,
+				0A3F3E192779A62C005749CC /* CDMarketBaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

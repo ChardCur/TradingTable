@@ -7,7 +7,6 @@
 
 #import "AttributeCell.h"
 #import "MarketConst.h"
-#import <objc/runtime.h>
 
 @interface AttributeCell ()
 
@@ -50,13 +49,15 @@
 - (void)setModel:(StockModel *)model {
     _model = model;
     NSArray *attributes = [AttributeHelper getHashAttributes];
+    NSArray *modelProperties = [AttributeHelper getProperties:[StockModel class]];
     for (int i = 0; i < attributes.count; i ++) {
         AttributeModel *atrModel = attributes[i];
-        
         UILabel *label = [self viewWithTag:100 + i];
-        NSNumber *num = [model valueForKeyPath:atrModel.keyName];
-        label.text = [AttributeHelper floatStringWithNumber:num];
-        label.textColor = [AttributeHelper colorWithFloatValue:num.floatValue];
+        if ([modelProperties containsObject:atrModel.keyName]) {
+            NSNumber *num = [model valueForKeyPath:atrModel.keyName];
+            label.text = [AttributeHelper floatStringWithNumber:num];
+            label.textColor = [AttributeHelper colorWithFloatValue:num.floatValue];
+        }
     }
 }
 
